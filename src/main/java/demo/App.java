@@ -10,13 +10,37 @@ public class App {
         TestCases tests = new TestCases(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
-
+        tests.createDriver();
         tests.testCase01();
+        tests.endTest();
 
-        //END Tests
+        tests.createDriver(); 
+        tests.testCase02();
+        tests.endTest();
 
+        tests.createDriver(); 
+        tests.testCase03();
+        tests.endTest();
+        
+        tests.createDriver(); 
+        tests.testCase05();
+        tests.endTest();
 
-        tests.endTest(); // End your test by clearning connections and closing browser
+        tests.createDriver(); 
+        tests.testCase06();
+        tests.endTest();
+
+        tests.createDriver(); 
+        tests.testCase07();
+        tests.endTest();
+
+        tests.createDriver(); 
+        tests.testCase09();
+        tests.endTest();
+
+        tests.createDriver(); 
+        tests.testCase10();
+        tests.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
